@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Recursion
+namespace BinarySearch
 {
     class Program
     {
@@ -15,9 +15,9 @@ namespace Recursion
 
             int[] searchArray = new int[10];
 
-            for (int i = 0; i < searchArray.Length; i++)
+            for (int i = 1; i <= searchArray.Length; i++)
             {
-                searchArray[i] = i;
+                searchArray[i-1] = i;
             }
 
             int searchResult = BinarySearchRecursive(searchArray, searchInt, 0, 10);
@@ -53,24 +53,16 @@ namespace Recursion
         public static int BinarySearchRecursive(int[] inputArray, int key, int min, int max)
         {
             if (min > max)
-            {
                 return -1;
-            }
             else
             {
                 int mid = (min + max) / 2;
                 if (key == inputArray[mid])
-                {
                     return mid;
-                }
                 else if (key < inputArray[mid])
-                {
                     return BinarySearchRecursive(inputArray, key, min, mid - 1);
-                }
                 else
-                {
                     return BinarySearchRecursive(inputArray, key, mid + 1, max);
-                }
             }
         }
     }

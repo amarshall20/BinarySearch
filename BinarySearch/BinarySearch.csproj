@@ -7,8 +7,8 @@
     <ProjectGuid>{372DCACC-1AD3-4AC5-8EF8-A32968322B3E}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Recursion</RootNamespace>
-    <AssemblyName>Recursion</AssemblyName>
+    <RootNamespace>BinarySearch</RootNamespace>
+    <AssemblyName>BinarySearch</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
